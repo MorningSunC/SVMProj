@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="smv.lovearthstudio.com.svmproj.fragment.SensorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_open_sensor"-->
+            <!--style="@style/SvmBtnStyle"-->
+            <!--android:text="打开传感器" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_close_sensor"-->
+            <!--style="@style/SvmBtnStyle"-->
+            <!--android:text="关闭传感器" />-->
+
+        <TextView
+            android:id="@+id/openSensor"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:text="打开传感器"
+            android:textStyle="bold"/>
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/sensor_oc"
+            android:layout_width="54dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            toggle:tbBorderWidth="2dp"
+            toggle:tbOffBorderColor="#F2F2F2"
+            toggle:tbOffColor="#ddd"
+            toggle:tbOnColor="#A8A8A8"
+            toggle:tbSpotColor="#BCEE68">
+        </com.zcw.togglebutton.ToggleButton>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sensor_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="smv.lovearthstudio.com.svmproj.fragment.CollectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="采集样本数据" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="0dp"
+            android:textSize="@dimen/small_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/spinner1"
+            android:hint="行为"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+        </com.weiwangcn.betterspinner.library.BetterSpinner>
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="0dp"
+            android:textSize="@dimen/small_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/spinner2"
+            android:hint="位置"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+        </com.weiwangcn.betterspinner.library.BetterSpinner>
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="0dp"
+            android:textSize="@dimen/small_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/spinner3"
+            android:hint="SENSOR"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+        </com.weiwangcn.betterspinner.library.BetterSpinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="开始采集"-->
+        <!--android:id="@+id/kaiShiCaiJi_btn"/>-->
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="取消采集"-->
+        <!--android:id="@+id/quXiaoCaiJi_btn"/>-->
+        <com.dd.CircularProgressButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始采集"
+            android:id="@+id/kaiShiCaiJi_btn"
+            android:textSize="18sp"
+            app:cpb_cornerRadius="48dp"
+            app:cpb_iconComplete="@drawable/ic_action_accept"
+            app:cpb_iconError="@drawable/ic_action_cancel"
+            app:cpb_textIdle="@string/label4"
+            app:cpb_selectorIdle="@drawable/idle_state_selector"
+            app:cpb_selectorComplete="@drawable/complete_state_selector"
+            app:cpb_selectorError="@drawable/error_state_selector"
+            app:cpb_paddingProgress="10dp"
+            />
+        <com.dd.CircularProgressButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消采集"
+            android:id="@+id/quXiaoCaiJi_btn"
+            android:textSize="18sp"
+            app:cpb_cornerRadius="48dp"
+            app:cpb_iconComplete="@drawable/ic_action_accept"
+            app:cpb_iconError="@drawable/ic_action_cancel"
+            app:cpb_textIdle="@string/label5"
+            app:cpb_selectorIdle="@drawable/idle_state_selector2"
+            app:cpb_selectorComplete="@drawable/complete_state_selector"
+            app:cpb_selectorError="@drawable/error_state_selector"
+            app:cpb_paddingProgress="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入名字"
+            android:id="@+id/inputName_et"/>
+
+        <com.hanks.htextview.HTextView
+            android:id="@+id/tv_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label6"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="8sp"
+            htext:animateType="fall"
+            />
+
+        <com.hanks.htextview.HTextView
+            android:id="@+id/tv_result2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label6"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            htext:animateType="fall"
+            />
+
+    </LinearLayout>
+</LinearLayout>

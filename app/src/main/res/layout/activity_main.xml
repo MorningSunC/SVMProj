@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/bgc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="smv.lovearthstudio.com.svmproj.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="333dp"
+        android:layout_weight="1" >
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="79dp"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        android:layout_x="153dp"
+        android:layout_y="132dp"
+        android:layout_gravity="center">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/floatinfActionMenu"
+            fab:fab_labelsPosition="right"
+            fab:fab_addButtonSize="mini"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="收集数据"
+                android:elevation="7dp"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_collect2"
+                fab:fab_size="mini"
+                fab:fab_title="收集数据"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="训练数据"
+                android:elevation="7dp"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_test2"
+                fab:fab_size="mini"
+                fab:fab_title="采集数据"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="测试数据"
+                android:elevation="7dp"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_real2"
+                fab:fab_size="mini"
+                fab:fab_title="测试数据"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="采集数据"-->
+        <!--android:id="@+id/btn_collect"-->
+        <!--/>-->
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="测试模型"-->
+        <!--android:id="@+id/btn_test"/>-->
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="真实数据"-->
+        <!--android:id="@+id/btn_real"/>-->
+
+    </RelativeLayout>
+
+</AbsoluteLayout>
